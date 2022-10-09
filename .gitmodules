@@ -1,0 +1,3 @@
+[submodule "app/src/directoryTreeView"]
+	path = app/src/directoryTreeView
+	url = https://github.com/AthulSPrakash/directory-tree-view.git
