@@ -1,7 +1,7 @@
 import './App.css'
 //import DirectoryTree from 'directory-tree-view'
 import DirectoryTreeView from './directoryTreeView'
-import sampleData from './sampleTree'
+import sampleData from './assets/sampleTree'
 
 function App() {
     const onClick = (target, nodeData) => {
