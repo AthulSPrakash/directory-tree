@@ -1,7 +1,6 @@
 import './App.css'
-//import DirectoryTree from 'directory-tree-view'
-import DirectoryTreeView from './directoryTreeView'
 import sampleData from './assets/sampleTree'
+import DirectoryTree from 'directory-tree-view'
 
 function App() {
     const onClick = (target, nodeData) => {
@@ -14,7 +13,7 @@ function App() {
             </header>
               <main>
                   <div className="tree-box">
-                    <DirectoryTreeView treeData={sampleData} onNodeClick={onClick} skin=""/>
+                    <DirectoryTree treeData={sampleData} onNodeClick={onClick} skin="solids"/>
                 </div>
             </main>
         </div>
