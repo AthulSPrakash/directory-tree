@@ -1,11 +1,15 @@
 import './App.css'
 import sampleData from './assets/sampleTree'
 import DirectoryTree from 'directory-tree-view'
+import { useState } from 'react'
 
 function App() {
-    const onClick = (target, nodeData) => {
-        console.log(target, nodeData)
+    // eslint-disable-next-line
+    const [tree, setTree] = useState(sampleData)
+    const onClick = (e) => {
+        console.log(e)
     }
+    console.log('App')
     return (
         <div className="app">
             <header className="app-header">
@@ -13,7 +17,7 @@ function App() {
             </header>
               <main>
                   <div className="tree-box">
-                    <DirectoryTree treeData={sampleData} onNodeClick={onClick} skin="solids"/>
+                    <DirectoryTree treeData={tree} onNodeClick={onClick} skin="solids"/>
                 </div>
             </main>
         </div>
