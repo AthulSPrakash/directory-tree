@@ -1,6 +1,7 @@
 import './App.css'
 import sampleData from './assets/sampleTree'
-import DirectoryTree from 'directory-tree-view'
+// import DirectoryTree from 'directory-tree-view'
+import DirectoryTree from './directoryTreeView'
 import { useState } from 'react'
 
 function App() {
@@ -17,7 +18,13 @@ function App() {
             </header>
               <main>
                   <div className="tree-box">
-                    <DirectoryTree treeData={tree} onNodeClick={onClick} skin="solids"/>
+                    <DirectoryTree 
+                        treeData={tree} 
+                        onNodeClick={onClick} 
+                        skin="reg" 
+                        nodeMenuBtn={true}
+                        bgColor={'white'}
+                    />
                 </div>
             </main>
         </div>
